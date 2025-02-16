@@ -39,7 +39,7 @@ use App\Helper\Helper;
                     <div class="container-lg">
                         <div class="header__section--primary">
                             <a href="/en" rel="home">
-                                <img src="images/logo.svg" width="152" height="50" alt="Home" fetchpriority="high">
+<!--                                <img src="images/logo.svg" width="152" height="50" alt="Home" fetchpriority="high">-->
                             </a>
 
 

@@ -1,10 +1,10 @@
 <?php
-$hero_section = !empty(get_field('hero_section')) ? get_field('hero_section') : null;
-if (empty($hero_section)) {
+$data = !empty(get_field('hero_section')) ? get_field('hero_section') : null;
+if (empty($data)) {
     return;
 }
 
-extract($hero_section);
+extract($data);
 ?>
 <div id="block-developersforagenciesandinhouseteams"
      class="block container-lg hero-section <?php echo $type; ?>">

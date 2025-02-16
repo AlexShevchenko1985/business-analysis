@@ -477,6 +477,20 @@
 
 </div>
 
+<?php
+/**
+ * Form popup
+ */
+get_template_part('template-parts/form-popup');
+?>
+
+<?php
+/**
+ * Thanks popup
+ */
+get_template_part('template-parts/thanks-popup');
+?>
+
 <?php wp_footer(); ?>
 
 </body>

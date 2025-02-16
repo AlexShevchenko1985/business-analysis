@@ -107,8 +107,29 @@
             "selected": 0
         },
         {
+            "key": "field_67b22cb6c37c0",
+            "label": "Popup Form title",
+            "name": "option_popup_form_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Request a free quote",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_67b200bf688fb",
-            "label": "Footer logo",
+            "label": "Form shortcode",
             "name": "option_form_shortcode",
             "aria-label": "",
             "type": "text",
@@ -123,6 +144,48 @@
             "default_value": "",
             "maxlength": "",
             "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67b20b3761d82",
+            "label": "Popup title",
+            "name": "option_popup_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Thank you!",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67b20b4161d83",
+            "label": "Popup subtitle",
+            "name": "option_popup_subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Your message has been sent.",
+            "maxlength": "",
+            "allow_in_bindings": 0,
             "placeholder": "",
             "prepend": "",
             "append": ""
@@ -146,5 +209,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1739718875
+    "modified": 1739730181
 }

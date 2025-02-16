@@ -1,12 +1,14 @@
 import {
-  //headerMenu,
+  cf7_popup,
+  cf7_thanks_popup,
 
 } from './components/index';
 
 
 const Tbc = {
   init() {
-    //headerMenu();
+    cf7_popup();
+    cf7_thanks_popup();
   }
 };
 
