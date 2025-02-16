@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
     "gsap": "^3.12.5",
     "sass": "^1.69.7",
     "scrollmagic": "^2.0.8",

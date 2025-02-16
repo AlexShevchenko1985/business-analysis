@@ -38,7 +38,7 @@ class Assets implements TaskInterface
             [],
             self::getFileVersion($script_dir),
         );
-
+        wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/src/scss/bootstrap.min.css');
         wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
     }
 
@@ -57,6 +57,9 @@ class Assets implements TaskInterface
             true
         );
 
+        wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/src/js/bootstrap.bundle.min.js', [], null, true);
+        wp_enqueue_script('main-js', get_template_directory_uri() . '/src/js/main.js', [], null, true);
+        wp_enqueue_script('mobile-menu-js', get_template_directory_uri() . '/src/js/menu--mobile.min.js', [], null, true);
         wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', [], null, true);
     }
 

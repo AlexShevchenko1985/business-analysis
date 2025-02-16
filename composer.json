@@ -1,6 +1,6 @@
 {
-    "name": "sigma/theme",
-    "description": "SigmaSoftware project",
+    "name": "node/theme",
+    "description": "Drupfan project",
     "version": "1.0.0",
     "autoload": {
         "psr-4": {
@@ -12,7 +12,7 @@
     },
     "authors": [
         {
-            "name": "Sigma Team"
+            "name": "Drupfan Team"
         }
     ]
 }

@@ -12,7 +12,7 @@ use App\Manager\SetupManager;
 
 class Theme extends Singleton
 {
-    public const SLUG = 'sigma';
+    public const SLUG = 'node';
 
 	/**
 	 * @var string[]

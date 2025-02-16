@@ -4,6 +4,6 @@ mix.js("src/js/app.js", "dist/")
 mix.sass("src/scss/app.scss", "dist/");
 
 mix.browserSync({
-    proxy: "https://space-node.test/",
+    proxy: "https://business-analysis.test/",
     files: ["./**/*.php", "./dist/**/*.*"],
 });
