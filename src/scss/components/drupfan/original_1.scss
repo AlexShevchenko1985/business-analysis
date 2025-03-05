@@ -24,11 +24,27 @@
 }
 
 @font-face {
+  font-family: metropolis;
+  src: url(/wp-content/themes/business-analysis/src/fonts/Metropolis-Medium.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
     font-family: Lora;
     src: local("Lora Regular"), local("Lora-Regular"), url(/wp-content/themes/business-analysis/src/fonts/lora-v14-latin-regular.woff2) format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+}
+
+@font-face {
+  font-family: Lora;
+  src: local("Lora Medium"), local("Lora-Medium"), url(/wp-content/themes/business-analysis/src/fonts/Lora-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -45,6 +61,14 @@
     font-weight: 700;
     font-style: normal;
     font-display: swap;
+}
+
+@font-face {
+  font-family: Lora;
+  src: local("Lora Bold"), local("Lora-Bold"), url(/wp-content/themes/business-analysis/src/fonts/lora-semibold.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -115,10 +139,24 @@
     --color-text-primary-medium: var(--color--primary-40);
     --color-text-primary-loud: var(--color--primary-30);
     --color--black: #000;
+    --color--dark-text: #1A1A1A;
+    --color--dark-title: #4A4A4A;
+    --color--dark-input: #4B4B4B;
+    --color--grey-input-border: #E2E2E2;
+    --color--grey-title: #858585;
+    --color--grey-borders: #AAAAAA;
     --color--white: #fff;
     --color--red: #e33f1e;
+    --color--red-errors: #FF2D20;
     --color--gold: #fdca40;
     --color--green: #3fa21c;
+    --color--blue-primary: #0706ff;
+    --color--blue-btn: #3837E5;
+    --color--blue-footer: #5278FF;
+    --color--blue-light-hover: #f1f7ff;
+    --color--blue-light-border: #a8cfff;
+    --color--blue-light-bg: #fafcff;
+    --color--grey-services: #E8E8E8;
     --header-height-wide-when-fixed: var(--sp6);
     --mobile-nav-width: 31.25rem;
     --border-radius: 0.1875rem;
@@ -295,6 +333,21 @@ ul {
     width: 100%;
     max-width: var(--max-width);
     padding-inline: var(--container-padding);
+}
+
+@media only screen and (min-width: 1400px) {
+  .container-lg {
+    max-width: 1296px !important;
+  }
+  .container-md {
+    max-width: 1190px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container-md {
+    max-width: 100% !important;
+  }
 }
 
 body.is-fixed .container {

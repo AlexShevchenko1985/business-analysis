@@ -38,13 +38,9 @@ use App\Helper\Helper;
                 <div class="header--primary">
                     <div class="container-lg">
                         <div class="header__section--primary">
-                            <a href="/en" rel="home">
-<!--                                <img src="images/logo.svg" width="152" height="50" alt="Home" fetchpriority="high">-->
+                            <a class="logo" href="/" rel="home">
+                                <img src="/wp-content/themes/business-analysis/src/images/Logo-Drupfan.svg" alt="Home" fetchpriority="high">
                             </a>
-
-
-
-
                             <div id="block-languagedropdownswitcher" class="block block-lang-dropdown block-language-dropdown-blocklanguage-interface">
 
 
@@ -86,428 +82,143 @@ use App\Helper\Helper;
                                 </a>
                                 <div class="wrapper--navigation__content">
                                     <nav id="block-drupfan-main-menu" class="primary-nav block block-menu navigation menu--main" aria-labelledby="block-drupfan-main-menu-menu" role="navigation">
-
-                                        <h2 class="visually-hidden block__title" id="block-drupfan-main-menu-menu">Main navigation</h2>
-
-
                                         <ul class="menu menu--level-1">
-
-
-
-
                                             <li class="menu__item menu__item--link menu__item--level-1 menu__item--has-children">
-
                                                 <a href="/en/outsourcing" class="menu__link menu__link--link menu__link--level-1 menu__link--has-children" data-drupal-link-system-path="node/139">Outsourcing</a>
-
                                                 <ul class="menu menu--level-2">
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/outsourcing/dedicated-teams" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/177">Dedicated Teams</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/outsourcing/staff-augmentation" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/178">Staff Augmentation</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/outsourcing/team-extension" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/179">Extended Team</a>
-
-
                                                     </li>
                                                 </ul>
-
-
                                             </li>
-
-
-
-
                                             <li class="menu__item menu__item--link menu__item--level-1 menu__item--has-children">
-
                                                 <a href="/en/software-solutions" class="menu__link menu__link--link menu__link--level-1 menu__link--has-children" data-drupal-link-system-path="node/140">Solutions</a>
-
                                                 <ul class="menu menu--level-2">
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/software-solutions/website-development" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/173">Website Development</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/software-solutions/website-support-and-maintenance" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/41">Support & Maintenance</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/software-solutions/business-analysis-and-planning" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/174">Business Analysis & Planning</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/software-solutions/ui-ux-design" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/175">UI/UX</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/software-solutions/native-mobile-application-development" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/181">Native Mobile Apps</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/software-solutions/cross-platform-app-development" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/182">Cross Platform/JS Mobile Apps</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/software-solutions/website-application-development" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/183">Web Apps</a>
-
-
                                                     </li>
                                                 </ul>
-
-
                                             </li>
-
-
-
-
                                             <li class="menu__item menu__item--link menu__item--level-1 menu__item--has-children">
-
                                                 <a href="/en/drupal-migration" class="menu__link menu__link--link menu__link--level-1 menu__link--has-children" data-drupal-link-system-path="node/191">Drupal Migration</a>
-
                                                 <ul class="menu menu--level-2">
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/drupal-migration/drupal-7-migration-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/184">Drupal 7 Migration</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/drupal-migration/drupal-10-update-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/185">Drupal 10/11 Update</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/drupal-migration/drupal-to-wordpress-migration-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/186">Drupal to WordPress</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/drupal-migration/wordpress-to-drupal-migration-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/187">WordPress to Drupal</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/drupal-migration/other-cms-to-drupal-migration-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/188">Other CMS to Drupal</a>
-
-
                                                     </li>
                                                 </ul>
-
-
                                             </li>
-
-
-
-
                                             <li class="technology-menu-container menu__item menu__item--link menu__item--level-1 menu__item--has-children">
-
                                                 <a href="/en/technology-stack" class="menu__link menu__link--link menu__link--level-1 menu__link--has-children" data-drupal-link-system-path="node/189">Technology</a>
-
                                                 <ul class="menu menu--level-2">
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/laravel-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/190">Laravel</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/drupal-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/18">Drupal</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/magento-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/192">Magento</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/shopify-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/193">Shopify</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/salesforce-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/195">Salesforce</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/unity-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/196">Unity</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/python-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/199">Python</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/php-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/200">PHP</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/symfony-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/201">Symfony</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/genesys-cloud-cx-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/202">Genesys</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/wordpress-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/203">WordPress</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/node-js-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/204">Node.js</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/react-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/205">React</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
-
                                                         <a href="/en/technology-stack/angular-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/206">Angular</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
 
                                                         <a href="/en/technology-stack/vue-js-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/207">Vue.js</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
 
                                                         <a href="/en/technology-stack/ios-app-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/208">IOS</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
 
                                                         <a href="/en/technology-stack/java-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/209">JAVA</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
 
                                                         <a href="/en/technology-stack/kotlin-app-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/210">Kotlin</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
 
                                                         <a href="/en/technology-stack/flutter-app-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/214">Flutter</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
 
                                                         <a href="/en/technology-stack/android-app-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/212">Android</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
 
                                                         <a href="/en/technology-stack/swift-app-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/213">Swift</a>
-
-
                                                     </li>
-
-
-
-
                                                     <li class="menu__item menu__item--link menu__item--level-2">
 
                                                         <a href="/en/technology-stack/next-js-development-services" class="menu__link menu__link--link menu__link--level-2" data-drupal-link-system-path="node/222">Next.js</a>
-
-
                                                     </li>
 
 
@@ -601,26 +312,13 @@ use App\Helper\Helper;
             </header>
         </div>
     </div>
-    <div class="highlighted">
-        <aside class="container section clearfix" role="complementary">
-            <div class="region region--highlighted grid-full layout--pass--content-medium">
-                <div data-drupal-messages-fallback="" class="hidden messages-list"></div>
-            </div>
-        </aside>
-    </div>
-
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
-        <div id="main" class="container-lg ">
+        <div id="main">
 
-            <div class="row row-offcanvas row-offcanvas-left clearfix">
-                <main>
+           <main>
 
-                    <section class="section">
+                   <div class="content-holder">
 
-                        <a href="#main-content" id="main-content" tabindex="-1">Back to top</a>
-
-
-                        <div class="region region--content layout--pass--content-medium">
 
 
 

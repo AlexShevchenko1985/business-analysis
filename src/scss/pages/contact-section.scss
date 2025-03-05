@@ -1,0 +1,343 @@
+.contact-section {
+  padding-block: clamp(30px, 7vw, 100px);
+  background: var(--color--grey-services);
+  position: relative;
+  margin-block: 0;
+  &:after {
+    content: "";
+    background-image: url("/wp-content/themes/business-analysis/src/images/contact-bg.webp");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container-lg {
+    position: relative;
+    z-index: 1;
+  }
+
+  .columns-holder {
+    display: flex;
+    column-gap: 74px;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and (max-width: 992px) {
+      column-gap: 0;
+      flex-direction: column-reverse;
+      row-gap: 30px;
+    }
+
+    .image-column {
+      width: 47%;
+      @media only screen and (max-width: 992px) {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .form-column {
+      width: 53%;
+      @media only screen and (max-width: 992px) {
+        width: 100%;
+      }
+
+      h2 {
+        font-family: var(--font-sans);
+        font-size: clamp(24px, 7vw, 42px);
+        line-height: clamp(24px, 7vw, 55px);
+        font-weight: 700;
+        color: var(--color--blue-primary);
+        margin-block-end: 24px;
+        text-align: center;
+      }
+
+      & > p {
+        font-family: var(--font-serif);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: var(--color--dark-text);
+        margin: 0 auto;
+        max-width: 456px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+body {
+  #main,
+  .form-popup {
+    form {
+      margin-block-start: 48px;
+      @media only screen and (max-width: 1366px) {
+        margin-block-start: 30px;
+      }
+      .wpcf7-spinner {
+        display: none;
+      }
+      .wpcf7-response-output {
+        display: none;
+      }
+      input:-webkit-autofill {
+        -webkit-box-shadow: none;
+        -webkit-text-fill-color: var(--color--dark-input);
+        transition: background-color 5000s ease-in-out 0s !important;
+      }
+      p {
+        margin: 0;
+
+        & > br {
+          display: none;
+        }
+      }
+
+      label {
+        font-family: var(--font-serif);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--color--dark-input);
+        display: block;
+
+        span {
+          color: var(--color--red-errors);
+        }
+
+        span.wpcf7-form-control-wrap {
+          position: relative;
+          display: block;
+          margin-bottom: 24px;
+        }
+        .wpcf7-not-valid-tip {
+          font-family: var(--font-serif);
+          font-size: 12px;
+          line-height: 16px;
+          position: absolute;
+          color: var(--color--red-errors);
+          top: calc(100% + 3px);
+          inset-inline-start: 0;
+        }
+        input,
+        textarea {
+          font-family: var(--font-serif);
+          width: 100%;
+          background: var(--color--white);
+          border-radius: 10px;
+          border: 1px solid var(--color--grey-input-border);
+          padding: 18px 12px;
+          font-size: 14px;
+          line-height: 16px;
+          color: var(--color--dark-input);
+          box-shadow: 0 0 15px 0 #0000001A;
+          min-height: auto;
+          margin-top: 12px;
+          @media only screen and (max-width: 1366px) {
+            padding: 14px 12px;
+            margin-top: 5px;
+          }
+
+          &::placeholder {
+            font-family: var(--font-serif);
+            font-size: 14px;
+            color: var(--color--dark-input);
+          }
+          &:focus,
+          &:focus-within,
+          &:focus-visible {
+            outline: none;
+            color: var(--color--dark-input);
+          }
+        }
+        textarea {
+          height: 120px;
+          resize: none;
+        }
+      }
+
+      .btn-contact {
+        display: flex;
+        position: relative;
+        width: fit-content;
+        .wpcf7-submit {
+          width: fit-content;
+          padding: 13px 60px 11px 46px;
+          background: var(--color--blue-btn) url("/wp-content/themes/business-analysis/src/images/contact-btn-arrow.svg");
+          border-radius: 10px;
+          font-family: var(--font-sans);
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          color: var(--color--white);
+          transition: all .3s;
+          background-position: calc(100% - 25px) center;
+          background-repeat: no-repeat;
+          background-size: 28px 28px;
+          border: 2px solid var(--color--blue-btn);
+          &:hover {
+            background: var(--color--blue-light-bg) url("/wp-content/themes/business-analysis/src/images/contact-btn-arrow-blue.svg");
+            background-position: calc(100% - 25px) center;
+            background-repeat: no-repeat;
+            background-size: 28px 28px;
+            color: var(--color--blue-btn);
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-block-message,
+.form-popup {
+  display: flex;
+  transition: all .3s;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(26, 26, 26, .5);
+  z-index: 9999;
+
+  .popup-form-content {
+    padding: 62px;
+    position: relative;
+    max-width: 856px;
+    width: calc(100% - 20px);
+    border: 1px solid var(--color--grey-input-border);
+    background-color: var(--color--white);
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 #0000001A;
+    flex-direction: column;
+    @media only screen and (max-width: 1366px) {
+      padding: 46px 40px 30px;
+    }
+
+    #form-close-button {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      inset-block-start: 32px;
+      inset-inline-end: 32px;
+      cursor: pointer;
+      @media only screen and (max-width: 1366px) {
+        inset-block-start: 20px;
+        inset-inline-end: 20px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    h4 {
+      text-align: center;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 36px;
+      color: var(--color--dark-text);
+      margin: 0;
+      @media only screen and (max-width: 1366px) {
+        font-size: 28px;
+        line-height: 30px;
+      }
+    }
+    form {
+      .btn-contact {
+        margin-top: 48px;
+        @media only screen and (max-width: 1366px) {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .popup-content {
+    padding: 50px;
+    position: relative;
+    max-width: 528px;
+    min-height: 338px;
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color--grey-input-border);
+    background-color: var(--color--white);
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 #0000001A;
+    flex-direction: column;
+
+    #form-message-button {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      inset-block-start: 24px;
+      inset-inline-end: 24px;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .icon {
+      width: 38px;
+      height: 38px;
+      margin-bottom: 48px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    h4 {
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 32px;
+      height: 36px;
+      text-align: center;
+      color: var(--color--dark-text);
+      margin: 0 0 24px;
+    }
+
+    .subtitle {
+      margin: 0;
+      text-align: center;
+      color: var(--color--dark-text);
+      font-family: var(--font-serif);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &.active {
+    .popup-content,
+    .popup-form-content {
+      animation: zoomIn 1s;
+    }
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.8, 0.8, 0.8);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+

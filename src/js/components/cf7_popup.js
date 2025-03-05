@@ -8,15 +8,20 @@ const cf7_popup = () => {
 
     const buttons   = document.querySelectorAll(".webform-dialog");
     const popupClose  = document.getElementById('form-close-button');
+    const body         = document.body;
 
     buttons.forEach(button => {
       button.addEventListener("click", function () {
-        popupWrapper.style.display = "block";
+        popupWrapper.style.display = "flex";
+        body.style.overflow        = 'hidden';
+        popupWrapper.classList.add('active');
       });
     });
 
     popupClose.addEventListener('click', function() {
       popupWrapper.style.display = 'none';
+      body.style.overflow = 'auto';
+      popupWrapper.classList.remove('active');
     }, false );
   });
 

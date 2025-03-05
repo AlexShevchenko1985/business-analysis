@@ -2322,7 +2322,7 @@ body {
 }
 
 #main-wrapper {
-    margin: 0 10px;
+    margin: 0;
     overflow-x: hidden
 }
 
@@ -3305,10 +3305,10 @@ body {
     background-size: cover;
     content: "";
     height: 100%;
-    left: calc(-50vw + 50%);
+    left: 0;
     position: absolute;
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: -1
 }
 
@@ -4314,334 +4314,6 @@ a.button-white:hover:after {
     margin: 2em 0
 }
 
-.footer--primary {
-    align-items: center;
-    background-image: url(/wp-content/themes/business-analysis/src/images/industries_1.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    display: flex;
-    font-family: var(--font-serif);
-    font-size: 1rem;
-    line-height: 1.5;
-    padding: 2rem 0
-}
-
-@media (max-width: 767.98px) {
-    .footer--primary {
-        padding-bottom: 4.375rem;
-        padding-top: 4.375rem
-    }
-}
-
-.footer--primary .container {
-    -webkit-font-smoothing: antialiased;
-    align-items: flex-start;
-    display: flex;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    gap: 1.25rem;
-    justify-content: space-between;
-    line-height: 1.5;
-    margin: 0 auto;
-    max-width: 1200px;
-    text-rendering: auto;
-    transition: all .3s linear;
-    width: 100%
-}
-
-@media (max-width: 767.98px) {
-    .footer--primary .container {
-        flex-direction: column
-    }
-}
-
-.footer--primary .container .menu__item {
-    margin: 5px 0
-}
-
-@media (max-width: 767.98px) {
-    .footer--primary .container .menu__item {
-        margin: 0 0 .3rem
-    }
-}
-
-.footer--primary .container .menu__link:hover {
-    text-decoration: underline
-}
-
-.footer--primary .container > div, .footer--primary .container > nav {
-    flex-basis: 0;
-    flex-grow: 1;
-    overflow: hidden;
-    padding: 0 1.25rem;
-    width: 100%
-}
-
-.footer--primary .container > div .block__title, .footer--primary .container > nav .block__title {
-    font-size: 1.125rem;
-    font-weight: 700
-}
-
-@media (max-width: 767.98px) {
-    .footer--primary .container > div .block__title, .footer--primary .container > nav .block__title {
-        margin-block: 0;
-        margin: 10px 0 0
-    }
-
-    .footer--primary .container > div, .footer--primary .container > nav {
-        flex-basis: 33.333%;
-        width: 100%
-    }
-}
-
-.footer--primary .container div.block-menu {
-    padding: 0 1.25rem;
-    width: 100%
-}
-
-@media (max-width: 767.98px) {
-    .footer--primary .container div.block-menu {
-        padding: 0
-    }
-}
-
-.footer--primary .container div.block-menu .footer-h2 {
-    font-weight: 700;
-    margin: 0 0 .3rem
-}
-
-@media (max-width: 767.98px) {
-    .footer--primary .container div.block-menu .footer-h2 {
-        font-size: 1.125rem;
-        font-weight: 700;
-        margin: .65rem 0
-    }
-
-    .footer--primary .container div.block-menu .footer-h2:after {
-        content: url(/wp-content/themes/business-analysis/src/images/arrow.svg);
-        float: right;
-        position: relative;
-        transform: rotate(0)
-    }
-}
-
-.footer--primary .container * {
-    color: inherit
-}
-
-.footer--primary .container .footer-socials-menu .menu__item {
-    position: relative
-}
-
-.footer--primary .menu--countries {
-    flex-grow: 2 !important
-}
-
-.footer--primary .menu--countries .menu {
-    column-count: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2
-}
-
-.footer-connect-container {
-    padding-left: 1.25rem;
-    position: relative;
-    width: 100%
-}
-
-.footer-connect-container .footer-h4, .footer-connect-container h3 {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5
-}
-
-@media (max-width: 767.98px) {
-    .footer-connect-container .footer-h4, .footer-connect-container h3 {
-        margin: .65rem 0;
-        padding: 0
-    }
-}
-
-.footer-connect-container .footer-h4 {
-    font-size: 1.125rem;
-    font-weight: 700
-}
-
-.footer-connect-container .country_link {
-    display: flex;
-    margin: .5rem 0
-}
-
-.footer-connect-container .country_link a:before {
-    display: inline-block;
-    height: auto;
-    margin-right: 6px;
-    position: relative;
-    top: 1px;
-    width: 1.2rem
-}
-
-.footer-connect-container .link_poland a:before {
-    content: url(/wp-content/themes/business-analysis/src/images/pl-3x4.svg)
-}
-
-.footer-connect-container .link_ukraine a:before {
-    content: url(/wp-content/themes/business-analysis/src/images/ua-3x4.svg)
-}
-
-.footer-connect-container .link_canada a:before {
-    content: url(/wp-content/themes/business-analysis/src/images/ca-3x4.svg)
-}
-
-.footer-connect-container .link_cyprus a:before {
-    content: url(/wp-content/themes/business-analysis/src/images/cy-3x4.svg)
-}
-
-.footer-connect-container .link_italy a:before {
-    content: url(/wp-content/themes/business-analysis/src/images/it-3x4.svg)
-}
-
-.footer-connect-container .link_romania a:before {
-    content: url(/wp-content/themes/business-analysis/src/images/ro-3x4.svg)
-}
-
-.footer-networks {
-    flex-grow: 2 !important;
-    margin-top: -5px
-}
-
-.footer-networks > div {
-    margin: 0 75px 5px 0;
-    padding-top: 82px
-}
-
-@media (max-width: 767.98px) {
-    .footer-networks > div {
-        margin: 0 auto;
-        padding-top: 0
-    }
-}
-
-.footer-networks .footer-h4, .footer-networks .footer-socials-subtitle, .footer-networks .footer-socials-title {
-    display: block;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    overflow: hidden;
-    padding: 0 10px 0 0;
-    text-overflow: ellipsis
-}
-
-@media (max-width: 767.98px) {
-    .footer-networks .footer-h4, .footer-networks .footer-socials-subtitle, .footer-networks .footer-socials-title {
-        font-size: .875rem;
-        font-weight: 400;
-        margin: 0 auto;
-        text-align: left
-    }
-
-    .footer-networks .footer-h4 {
-        text-align: center
-    }
-}
-
-.footer-networks:before {
-    background: url(/wp-content/themes/business-analysis/src/images/drupfan-white-big.svg) no-repeat 50%;
-    background-size: 150%;
-    content: " ";
-    height: 65px;
-    position: absolute;
-    width: 196px
-}
-
-@media (max-width: 767.98px) {
-    .footer-networks:before {
-        display: inline-block;
-        margin-left: 50%;
-        position: static;
-        transform: translateX(-50%)
-    }
-}
-
-.footer-networks .menu {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: .5rem;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0
-}
-
-@media (max-width: 767.98px) {
-    .footer-networks .menu {
-        align-items: center;
-        justify-content: center
-    }
-}
-
-.footer-networks .menu__item {
-    margin: 0 1.25rem 0 0;
-    position: relative
-}
-
-.footer-networks .menu__link {
-    -webkit-font-smoothing: antialiased;
-    color: #0675ff;
-    display: inline-block;
-    font-size: 0;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 1.25;
-    text-rendering: auto
-}
-
-.footer-networks .menu__link:hover {
-    color: #0706ff
-}
-
-.footer-networks .menu__link:before {
-    -webkit-font-smoothing: antialiased;
-    background: 0 0;
-    display: inline-block;
-    font-size: 2rem;
-    transition: all .3s linear;
-    vertical-align: bottom
-}
-
-.footer-networks .menu__link.linkedin:before {
-    content: url(/wp-content/themes/business-analysis/src/images/linkedin.svg)
-}
-
-.footer-networks .menu__link.fb:before {
-    content: url(/wp-content/themes/business-analysis/src/images/facebook.svg)
-}
-
-.footer-networks .menu__link.twitter:before {
-    content: url(/wp-content/themes/business-analysis/src/images/x.svg)
-}
-
-.footer-networks .menu__link.instagram:before {
-    content: url(/wp-content/themes/business-analysis/src/images/instagram.svg)
-}
-
-.footer-networks .menu__link.drupal-org:before {
-    content: url(/wp-content/themes/business-analysis/src/images/drupal.svg)
-}
-
-.footer-h2, .footer-h4 {
-    display: block;
-    font-family: var(--font-sans);
-    margin-bottom: 1rem
-}
-
 .ui-dialog .ui-dialog-titlebar {
     background-color: #0675ff;
     color: #fff
@@ -4827,12 +4499,6 @@ form:not(.webform-submission-contact-us-form) .form-item__label.form-required:af
     min-height: fit-content
 }
 
-.header--primary > .container-lg .header__section--primary {
-    align-items: center;
-    display: flex;
-    gap: 10px
-}
-
 .wrapper--page-top {
     background-color: #fff;
     width: 100%;
@@ -4898,11 +4564,6 @@ form:not(.webform-submission-contact-us-form) .form-item__label.form-required:af
 
 #main-content {
     visibility: hidden
-}
-
-.block-language-dropdown-blocklanguage-interface {
-    margin-top: 15px;
-    text-transform: uppercase
 }
 
 .block-language-dropdown-blocklanguage-interface .ldsSkin {
@@ -4977,7 +4638,6 @@ form:not(.webform-submission-contact-us-form) .form-item__label.form-required:af
     .menu--main ul.menu {
         align-items: center;
         display: flex;
-        margin-top: 15px
     }
 
     .menu--main ul.menu .menu__item {
