@@ -2,8 +2,8 @@
 namespace App\Manager;
 
 use App\Base\AbstractManager;
-use App\CustomPostTypes\Member;
-use App\CustomPostTypes\Sigma;
+use App\CustomPostTypes\Project;
+use App\CustomPostTypes\Services;
 
 class PostTypesManager extends AbstractManager
 {
@@ -14,7 +14,8 @@ class PostTypesManager extends AbstractManager
 	public function execute(): void
 	{
 		$this->items = [
-			Sigma::class,
+            Project::class,
+            Services::class,
 		];
 
 		add_action('init', [$this, 'register']);

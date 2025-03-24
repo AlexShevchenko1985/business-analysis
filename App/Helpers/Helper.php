@@ -38,5 +38,26 @@ class Helper
         }
         return $string;
     }
+
+    public static function backgroundBlock($background): string
+    {
+        if(empty($background)){
+            return '';
+        }
+
+        if('white' === $background){
+            return 'background: #fff';
+        }
+
+        if('grey' === $background){
+            return 'background: rgba(232, 232, 232, 0.7);';
+        }
+
+        if('blue' === $background){
+            return 'background: rgba(117, 147, 255, 0.3);';
+        }
+
+        return '';
+    }
 }
 

@@ -6,12 +6,18 @@ const cf7_popup = () => {
 
     if (!popupWrapper) return;
 
-    const buttons   = document.querySelectorAll(".webform-dialog");
-    const popupClose  = document.getElementById('form-close-button');
+    const buttons      = document.querySelectorAll(".webform-dialog");
+    const popupClose      = document.getElementById('form-close-button');
+    const formPopupTitle  = document.getElementById('form-popup-title');
+
     const body         = document.body;
 
     buttons.forEach(button => {
       button.addEventListener("click", function () {
+        let title = this.innerText.trim();
+        if (title) {
+          formPopupTitle.innerText = title;
+        }
         popupWrapper.style.display = "flex";
         body.style.overflow        = 'hidden';
         popupWrapper.classList.add('active');

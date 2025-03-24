@@ -130,4 +130,33 @@
       }
     }
   }
+
+  .btn-holder {
+    display: flex;
+    justify-content: center;
+    .button-cta {
+      margin: 0;
+      text-decoration: none;
+      padding: 15px 20px 13px;
+      min-width: 183px;
+      text-align: center;
+      border: 2px solid var(--color--blue-primary);
+      text-transform: capitalize;
+      &:hover {
+        color: var(--color--blue-primary);
+        background: var(--color--blue-light-hover);
+      }
+      @media only screen and (max-width: 650px) {
+        width: 100%;
+      }
+      &.secondary-btn {
+        color: var(--color--dark-text);
+        background-color: transparent;
+        &:hover {
+          color: var(--color--white);
+          background: var(--color--blue-primary);
+        }
+      }
+    }
+  }
 }

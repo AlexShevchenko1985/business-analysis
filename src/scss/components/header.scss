@@ -9,8 +9,22 @@ body {
     &__section--secondary {
       .wrapper--navigation {
         &__content {
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
           @media only screen and (max-width: 992px) {
             max-width: 26rem;
+          }
+          a.button-cta {
+            margin: 0;
+            text-decoration: none;
+            border: 2px solid var(--color--blue-primary);
+            transition: all .3s;
+
+            &:hover {
+              color: var(--color--blue-primary);
+              background: var(--color--blue-light-hover);
+            }
           }
         }
       }
@@ -18,6 +32,9 @@ body {
     .menu--main {
       ul {
         &.menu {
+          list-style: none;
+          padding: 0;
+          margin: 0;
           a {
             color: var(--color--blue-primary);
             text-decoration: none;
@@ -32,6 +49,40 @@ body {
               color: var(--color--white);
               &:hover {
                 color: var(--color--blue-primary);
+              }
+            }
+          }
+          .sub-menu {
+            list-style: none;
+            margin: 0;
+            align-items: start;
+            background-color: var(--color--white);
+            display: flex;
+            flex-direction: column;
+            padding: .5rem;
+            position: absolute;
+            width: auto;
+            transition: all .3s;
+            opacity: 0;
+            visibility: hidden;
+            top: calc(100% + 10px);
+            li {
+              a {
+                font-size: .875rem;
+                margin-left: 10px;
+                min-width: 110px;
+                white-space: nowrap;
+              }
+            }
+          }
+          & > li {
+            position: relative;
+            &:hover {
+              .sub-menu {
+                z-index: 999999;
+                visibility: visible;
+                opacity: 1;
+                top: 100%;
               }
             }
           }

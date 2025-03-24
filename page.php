@@ -24,7 +24,9 @@ get_template_part('template-parts/hero');
  * Content
  */
 FlexibleContentRenderer::getInstance()->render(get_the_ID());
+?>
 
+<?php
 /**
  * Form section
  */

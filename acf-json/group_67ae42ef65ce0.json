@@ -43,7 +43,98 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
+            "allow_in_bindings": 1,
             "preview_size": "thumbnail"
+        },
+        {
+            "key": "field_67e01675d34c3",
+            "label": "Button",
+            "name": "option_header_button",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_67e01675d34c4",
+                    "label": "Button text",
+                    "name": "button_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_67e01675d34c5",
+                    "label": "Use as?",
+                    "name": "use_as",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "form_popup": "Form popup",
+                        "link": "Link"
+                    },
+                    "default_value": "form_popup",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "allow_in_bindings": 0,
+                    "layout": "vertical",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_67e01675d34c6",
+                    "label": "Link",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_67e01675d34c5",
+                                "operator": "=="
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": ""
+                }
+            ]
         },
         {
             "key": "field_67ae4372d5cb4",
@@ -107,27 +198,6 @@
             "selected": 0
         },
         {
-            "key": "field_67b22cb6c37c0",
-            "label": "Popup Form title",
-            "name": "option_popup_form_title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Request a free quote",
-            "maxlength": "",
-            "allow_in_bindings": 0,
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
             "key": "field_67b200bf688fb",
             "label": "Form shortcode",
             "name": "option_form_shortcode",
@@ -149,8 +219,29 @@
             "append": ""
         },
         {
+            "key": "field_67b22cb6c37c0",
+            "label": "Popup Form title",
+            "name": "option_popup_form_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Request a free quote",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_67b20b3761d82",
-            "label": "Popup title",
+            "label": "Popup title(thanks popup)",
             "name": "option_popup_title",
             "aria-label": "",
             "type": "text",
@@ -171,7 +262,7 @@
         },
         {
             "key": "field_67b20b4161d83",
-            "label": "Popup subtitle",
+            "label": "Popup subtitle(thanks popup)",
             "name": "option_popup_subtitle",
             "aria-label": "",
             "type": "text",
@@ -209,5 +300,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1739730181
+    "modified": 1742742281
 }

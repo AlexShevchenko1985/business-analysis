@@ -3,22 +3,14 @@ namespace App\CustomPostTypes;
 
 use App\Base\TaskInterface;
 
-class Sigma implements TaskInterface
+class Services implements TaskInterface
 {
     /**
      * Post type constants
      */
-    const POST_TYPE = 'sigma';
-    const SINGLE_NAME = 'Sigma';
-    const PLURAL_NAME = 'Sigma';
-
-    /**
-     * Tax constants
-     */
-    const TAXONOMY = 'sigma-category';
-    const TAXONOMY_SINGLE_NAME = 'Category';
-    const TAXONOMY_PLURAL_NAME = 'Categories';
-
+    const POST_TYPE = 'service';
+    const SINGLE_NAME = 'Services';
+    const PLURAL_NAME = 'Service';
 
 
     /**
@@ -27,7 +19,6 @@ class Sigma implements TaskInterface
     public function do(): void
     {
         $this->registerPostTypes();
-        $this->registerTaxonomies();
     }
 
     /**
@@ -58,35 +49,8 @@ class Sigma implements TaskInterface
             'menu_icon'     => 'dashicons-book',
             'rewrite'       => ['slug' => static::POST_TYPE],
             'supports'      => ['thumbnail', 'title', 'editor', 'page-attributes'],
-            'has_archive'   => true,
+            'has_archive'   => false,
             'show_in_rest'  => true,
-        ]);
-    }
-
-    /**
-     * @return void
-     */
-    private function registerTaxonomies(): void
-    {
-        register_taxonomy(static::TAXONOMY, [static::POST_TYPE], [
-            'label'        => esc_html__('Sigma Categories', SSW_TD),
-            'labels'       => [
-                'name'              => esc_html__(self::TAXONOMY_PLURAL_NAME, SSW_TD),
-                'singular_name'     => esc_html__(self::TAXONOMY_SINGLE_NAME, SSW_TD),
-                'search_items'      => esc_html__('Search ' . self::TAXONOMY_PLURAL_NAME, SSW_TD),
-                'all_items'         => esc_html__('All ' . self::TAXONOMY_PLURAL_NAME, SSW_TD),
-                'edit_item'         => esc_html__('Edit ' . self::TAXONOMY_SINGLE_NAME, SSW_TD),
-                'update_item'       => esc_html__('Update ' . self::TAXONOMY_SINGLE_NAME, SSW_TD),
-                'add_new_item'      => esc_html__('Add New ' . self::TAXONOMY_SINGLE_NAME, SSW_TD),
-                'new_item_name'     => esc_html__('New ' . self::TAXONOMY_SINGLE_NAME . ' Name', SSW_TD),
-                'menu_name'         => esc_html__(self::TAXONOMY_PLURAL_NAME, SSW_TD),
-            ],
-            'public'       => true,
-            'hierarchical' => true,
-            'show_ui'      => true,
-            'show_admin_column' => true,
-            'show_in_rest' => true,
-            'rewrite'      => ['slug' => static::TAXONOMY],
         ]);
     }
 }
