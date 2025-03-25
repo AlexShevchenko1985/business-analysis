@@ -54,6 +54,7 @@
           color: var(--color--dark-title);
           margin: 0;
           font-weight: 700;
+          word-break: auto-phrase;
         }
       }
 
@@ -165,6 +166,7 @@
           font-weight: 700;
           color: var(--color--blue-primary);
           margin-block-end: 32px;
+          word-break: auto-phrase;
         }
 
         p {
@@ -175,6 +177,25 @@
           color: var(--color--dark-text);
           margin: 0;
         }
+      }
+    }
+  }
+
+  .text-ribbon {
+    margin-top: 60px;
+    text-align: center;
+    @media only screen and (max-width: 992px) {
+      margin-top: 30px;
+    }
+    p {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: 16px;
+      line-height: 22px;
+      color: var(--color--dark-text);
+      strong,
+      b {
+        font-weight: 700;
       }
     }
   }
@@ -202,6 +223,26 @@
       }
       @media only screen and (max-width: 650px) {
         width: 100%;
+      }
+    }
+  }
+  &.single-services {
+    background: url("/wp-content/themes/business-analysis/src/images/services-bg-2.webp"), linear-gradient(0deg, rgba(117, 147, 255, 0.3), rgba(117, 147, 255, 0.3));
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .cards-holder {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .btn-holder {
+      .button-cta {
+        background: var(--color--blue-primary);
+        color: var(--color--white);
+        &:hover {
+          color: var(--color--blue-primary);
+          background: var(--color--blue-light-hover);
+        }
       }
     }
   }

@@ -1,6 +1,10 @@
 body {
   .hero-section {
+    padding-block-start: 100px;
     margin-block-end: 0;
+    @media only screen and (max-width: 992px) {
+      padding-block-start: 0;
+    }
     .hero-text {
       margin-top: 54px;
       @media only screen and (max-width: 1200px) {

@@ -109,6 +109,9 @@
           padding-left: 23px;
           li {
             padding: 0;
+            strong {
+              font-weight: 700;
+            }
           }
         }
       }
@@ -116,6 +119,26 @@
         .faq-title {
           &:after {
             transform: rotate(-180deg);
+          }
+        }
+      }
+    }
+    & > p {
+      margin-top: 48px;
+      padding: 0 20px;
+      @media only screen and (max-width: 992px) {
+        margin-top: 30px;
+        padding: 0;
+      }
+    }
+  }
+  &.services-single {
+    .heading {
+      h2 {
+        text-align: center;
+        @media only screen and (max-width: 992px) {
+          br {
+            display: none;
           }
         }
       }

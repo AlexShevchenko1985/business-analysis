@@ -210,4 +210,15 @@
       }
     }
   }
+  &.services-single {
+    .container-lg {
+      & > .heading {
+        text-align: center;
+        max-width: 830px;
+      }
+      .list-with-numbers-grid {
+        margin-block-end: 0;
+      }
+    }
+  }
 }

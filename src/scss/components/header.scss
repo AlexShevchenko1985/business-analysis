@@ -66,12 +66,17 @@ body {
             opacity: 0;
             visibility: hidden;
             top: calc(100% + 10px);
+            box-shadow: 0 0 15px rgba(15, 14, 14, .1);
+            border-radius: 8px;
             li {
+              display: block;
+              width: 100%;
               a {
                 font-size: .875rem;
-                margin-left: 10px;
                 min-width: 110px;
                 white-space: nowrap;
+                display: block;
+                width: 100%;
               }
             }
           }
