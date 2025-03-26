@@ -5,10 +5,10 @@ $option_popup_subtitle = !empty(get_field('option_popup_subtitle', 'options')) ?
 <div class="form-block-message" id="form-block-message" style="display: none;">
 	<div class="popup-content" id="popup-content">
 	    <div id="form-message-button">
-	        <img src="/wp-content/themes/business-analysis/src/images/cross-popup.svg" alt="Icon">
+	        <img src="<?php echo get_template_directory_uri(); ?>/src/images/cross-popup.svg" alt="Icon">
 	    </div>
 	    <div class="icon">
-	        <img src="/wp-content/themes/business-analysis/src/images/green-check.svg" alt="Icon">
+	        <img src="<?php echo get_template_directory_uri(); ?>/src/images/green-check.svg" alt="Icon">
 	    </div>
 	    <?php if (!empty($option_popup_title)): ?>
 	        <h4><?php echo $option_popup_title; ?></h4>

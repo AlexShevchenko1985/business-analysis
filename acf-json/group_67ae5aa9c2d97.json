@@ -582,7 +582,8 @@
                             "choices": {
                                 "white": "white",
                                 "grey": "grey",
-                                "blue": "blue"
+                                "blue": "blue",
+                                "single-services": "Blue image"
                             },
                             "default_value": "",
                             "return_format": "value",
@@ -745,6 +746,27 @@
                                     "parent_repeater": "field_67d6ed6f71b41"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_67e4034fab241",
+                            "label": "Description",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "rows": 4,
+                            "placeholder": "",
+                            "new_lines": ""
                         },
                         {
                             "key": "field_67d6f1c9bf886",
@@ -2283,7 +2305,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "60",
                                 "class": "",
                                 "id": ""
                             },
@@ -2293,6 +2315,27 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": ""
+                        },
+                        {
+                            "key": "field_67e3f9799bc18",
+                            "label": "Align text to center",
+                            "name": "align_text_to_center",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "allow_in_bindings": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
                         },
                         {
                             "key": "field_67dc37961b739",
@@ -2360,6 +2403,27 @@
                                     "parent_repeater": "field_67dc37961b739"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_67e3f7edb9979",
+                            "label": "Description",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "rows": 4,
+                            "placeholder": "",
+                            "new_lines": ""
                         }
                     ],
                     "min": "",
@@ -2602,6 +2666,13 @@
                 "operator": "==",
                 "value": "page"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "service"
+            }
         ]
     ],
     "menu_order": 0,
@@ -2613,5 +2684,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1742742092
+    "modified": 1742996320
 }

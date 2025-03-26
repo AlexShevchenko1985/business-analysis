@@ -7,8 +7,9 @@ $text = !empty($text)? $text : '';
 $cards = !empty($cards)? $cards : [];
 $button = !empty($button)? $button : '';
 $background = !empty($background)? $background: '';
+$description = !empty($description)? $description : '';
 ?>
-<section class="services" style="<?php echo Helper::backgroundBlock($background)?>">
+<section class="services <?php echo $background; ?>" style="<?php echo Helper::backgroundBlock($background)?>">
     <div class="container-lg">
         <div class="cards-holder">
             <div class="item transparent-item">
@@ -50,6 +51,12 @@ $background = !empty($background)? $background: '';
             <?php endforeach; ?>
 
         </div>
+
+        <?php if (!empty($description)): ?>
+            <div class="text-ribbon">
+                <p><?php echo $description; ?></p>
+            </div>
+        <?php endif; ?>
 
         <?php if (!empty($button['button_text'])): ?>
             <div class="btn-holder">

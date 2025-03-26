@@ -5,6 +5,8 @@ $background = !empty($background)? $background: '';
 $suptitle = !empty($suptitle)? $suptitle : '';
 $title = !empty($title)? $title : '';
 $items = !empty($faq_items)? $faq_items : [];
+$description = !empty($description)? $description : '';
+$align_text_to_center = !empty($align_text_to_center)? 'text-align: center' : '';
 ?>
 <section class="faq-section" style="<?php echo Helper::backgroundBlock($background)?>">
     <div class="container-lg">
@@ -13,7 +15,7 @@ $items = !empty($faq_items)? $faq_items : [];
                 <div class="sup-title"><?php echo $suptitle; ?></div>
             <?php endif; ?>
             <?php if (!empty($title)): ?>
-                <h2><?php echo $title; ?></h2>
+                <h2 style="<?php echo $align_text_to_center; ?>"><?php echo $title; ?></h2>
             <?php endif; ?>
         </div>
 
@@ -31,6 +33,9 @@ $items = !empty($faq_items)? $faq_items : [];
                         <?php endif; ?>
                 </div>
                 <?php endforeach; ?>
+                <?php if (!empty($description)): ?>
+                    <p><?php echo $description; ?></p>
+                <?php endif; ?>
             </div>
         <?php endif; ?>
 

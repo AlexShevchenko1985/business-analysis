@@ -8,8 +8,10 @@ $text = !empty($text)? $text : '';
 $items = !empty($items)? $items : [];
 $description = !empty($description)? $description : '';
 $button = !empty($button)? $button : '';
+$classes = (empty($button['button_text']))? 'list-with-numbers services-single' : 'list-with-numbers';
+
 ?>
-<section class="list-with-numbers" style="<?php echo Helper::backgroundBlock($background)?>">
+<section class="<?php echo $classes; ?>" style="<?php echo Helper::backgroundBlock($background)?>">
     <div class="container-lg">
         <div class="heading">
             <?php if (!empty($sup_title)): ?>

@@ -45,7 +45,8 @@ class ThemeSetup implements TaskInterface
         register_nav_menus(
             [
                 'header_menu' => esc_html__( 'Header Menu', SSW_TD ),
-                'footer_menu' => esc_html__( 'Footer Menu', SSW_TD ),
+                'footer_menu_1' => esc_html__( 'Footer Menu 1', SSW_TD ),
+                'footer_menu_2' => esc_html__( 'Footer Menu 2', SSW_TD ),
             ]
         );
 

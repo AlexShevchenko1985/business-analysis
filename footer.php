@@ -24,90 +24,106 @@
 </div>
 </div>
 
+<?php
+$option_footer_logo  = get_field('option_footer_logo', 'options');
+$option_social_block = get_field('option_social_block', 'options');
+$column_1 = get_field('column_1', 'options');
+$column_2 = get_field('column_2', 'options');
+$column_3 = get_field('column_3', 'options');
+?>
+
 <footer class="footer footer--primary" role="contentinfo">
 
     <div class="container">
         <div class="footer-holder">
             <div class="left-side">
-                <div class="logo">
-                    <img src="/wp-content/themes/business-analysis/src/images/footer-logo1.svg" alt="Logo">
-                </div>
-                <div class="socials">
-                    <p>Follow Us</p>
-                    <div class="social-links">
-                        <a href="" target="_blank" title="Linkedin">
-                            <img src="/wp-content/themes/business-analysis/src/images/linkedin.svg" alt="Icon">
-                        </a>
-                        <a href="" target="_blank" title="Twitter">
-                            <img src="/wp-content/themes/business-analysis/src/images/x.svg" alt="Icon">
-                        </a>
-                        <a href="" target="_blank" title="Facebook">
-                            <img src="/wp-content/themes/business-analysis/src/images/facebook.svg" alt="Icon">
-                        </a>
-                        <a href="" target="_blank" title="Instagram">
-                            <img src="/wp-content/themes/business-analysis/src/images/instagram.svg" alt="Icon">
-                        </a>
-                        <a href="" target="_blank" title="Drupal">
-                            <img src="/wp-content/themes/business-analysis/src/images/drupal-soc.svg" alt="Icon">
-                        </a>
+                <?php if (!empty($option_footer_logo)): ?>
+                    <div class="logo">
+                        <img src="<?php echo $option_footer_logo['url']; ?>" alt="<?php echo get_bloginfo('name'); ?>" fetchpriority="high">
                     </div>
+                <?php endif; ?>
+
+                <div class="socials">
+                    <?php if (!empty($option_social_block['title'])): ?>
+                        <p><?php echo $option_social_block['title']; ?></p>
+                    <?php endif; ?>
+
+                    <?php if (!empty($option_social_block['social'])): ?>
+                        <div class="social-links">
+                            <?php foreach ($option_social_block['social'] as $item): ?>
+                                <?php if (!empty($item['link'])): ?>
+                                    <a href="<?php echo $item['link']; ?>" target="_blank" title="<?php echo $item['icon']['title']; ?>">
+                                        <?php if (!empty($item['icon'])): ?>
+                                            <img src="<?php echo $item['icon']['url']; ?>" alt="<?php echo $item['icon']['title']; ?>">
+                                        <?php endif; ?>
+                                    </a>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
+
                 </div>
             </div>
             <div class="right-side">
-                <div class="column">
-                    <h4>Featured Solutions</h4>
-                    <ul>
-                        <li>
-                            <a href="" title="">Services</a>
-                        </li>
-                        <li>
-                            <a href="" title="">BA Outstaffing</a>
-                        </li>
-                        <li>
-                            <a href="" title="">Case Studies</a>
-                        </li>
-                        <li>
-                            <a href="" title="">Insights</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h4>Information</h4>
-                    <ul>
-                        <li>
-                            <a href="" title="">About us</a>
-                        </li>
-                        <li>
-                            <a href="" title="">Cookies</a>
-                        </li>
-                        <li>
-                            <a href="" title="">Policy</a>
-                        </li>
-                        <li>
-                            <a href="" title="">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h4>Get in Touch</h4>
-                    <ul>
-                        <li>
-                            <a href="" title=""><img src="/wp-content/themes/business-analysis/src/images/ca-3x4.svg" alt="Icon"> Canada</a>
-                        </li>
-                        <li>
-                            <a href="" title=""><img src="/wp-content/themes/business-analysis/src/images/it-3x4.svg" alt="Icon"> Italy</a>
-                        </li>
-                        <li>
-                            <a href="" title=""><img src="/wp-content/themes/business-analysis/src/images/ro-3x4.svg" alt="Icon"> Romania</a>
-                        </li>
-                        <li>
-                            <a href="" title=""><img src="/wp-content/themes/business-analysis/src/images/pl-3x4.svg" alt="Icon"> Poland</a>
-                        </li>
-                        <li>
-                            <a href="" title=""><img src="/wp-content/themes/business-analysis/src/images/ua-3x4.svg" alt="Icon"> Ukraine</a>
-                        </li>
-                    </ul>
-                </div>
+                <?php if (!empty($column_1)): ?>
+                    <div class="column">
+                        <?php if (!empty($column_1['title'])): ?>
+                            <h4><?php echo $column_1['title']; ?></h4>
+                        <?php endif; ?>
+                        <?php
+                        if($column_1['menu']){
+                            wp_nav_menu([
+                                'menu'       => $column_1['menu'],
+                                'container'  => false,
+                                'menu_class' => 'menu-list'
+                            ]);
+                        }
+                        ?>
+                    </div>
+                <?php endif; ?>
+
+                <?php if (!empty($column_2)): ?>
+                    <div class="column">
+                        <?php if (!empty($column_2['title'])): ?>
+                            <h4><?php echo $column_2['title']; ?></h4>
+                        <?php endif; ?>
+                        <?php
+                        if($column_2['menu']){
+                            wp_nav_menu([
+                                'menu'       => $column_2['menu'],
+                                'container'  => false,
+                                'menu_class' => 'menu-list'
+                            ]);
+                        }
+                        ?>
+                    </div>
+                <?php endif; ?>
+                <?php if (!empty($column_3)): ?>
+                    <div class="column">
+                        <?php if (!empty($column_3['title'])): ?>
+                            <h4><?php echo $column_3['title']; ?></h4>
+                        <?php endif; ?>
+                        <?php if (!empty($column_3['items'])): ?>
+                            <ul>
+                                <?php foreach ($column_3['items'] as $item):
+                                    $button = !empty($item['link'])? $item['link'] : [];
+                                    $title   = !empty($button['title'])? $button['title'] : '';
+                                    $link    = !empty($button['url'])? $button['url'] : 'javascript:void(0)';
+                                    $target   = !empty($button['target'])? '_blank' : '_self';
+                                    ?>
+                                    <li>
+                                        <a href="<?php echo $link; ?>" title="<?php echo $title; ?>">
+                                            <?php if (!empty($item['icon'])): ?>
+                                                <img src="<?php echo $item['icon']; ?>" alt="<?php echo $title; ?>">
+                                            <?php endif; ?>
+                                            <?php echo $title; ?>
+                                        </a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>
