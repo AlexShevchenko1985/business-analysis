@@ -42,3 +42,29 @@ body {
 
   }
 }
+
+#block-developersforagenciesandinhouseteams {
+  &.services-index {
+    &:after {
+      background: #fff url(/wp-content/themes/business-analysis/src/images/index-services-bg.webp) no-repeat;
+      background-position: right 50%;
+      background-size: 50% 90%;
+    }
+    .hero-text {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 80px;
+      @media only screen and (max-width: 992px) {
+        padding-right: 0;
+      }
+    }
+    .paragraph-image-item {
+      img {
+        max-height: 650px;
+        width: auto;
+      }
+    }
+  }
+}

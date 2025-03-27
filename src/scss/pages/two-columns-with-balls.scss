@@ -78,6 +78,11 @@
         font-weight: 700;
         color: var(--color--blue-primary);
         margin-block-end: 24px;
+        @media only screen and (max-width: 992px) {
+          br {
+            display: none;
+          }
+        }
       }
 
       p {

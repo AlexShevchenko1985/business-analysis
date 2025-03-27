@@ -74,6 +74,10 @@
     }
 
     .column {
+      width: calc(50% - 24px);
+      @media only screen and (max-width: 992px) {
+        width: 100%;
+      }
       p {
         font-family: var(--font-serif);
         margin-bottom: 30px;
