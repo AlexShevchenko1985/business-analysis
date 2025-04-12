@@ -6,6 +6,8 @@ import {
   accordion,
   popupSlider,
   backToTopBtn,
+  postsSidebar,
+  postsProgressBar,
 
 } from './components/index';
 
@@ -19,6 +21,8 @@ const Tbc = {
     accordion();
     popupSlider();
     backToTopBtn();
+    postsSidebar();
+    postsProgressBar();
   }
 };
 

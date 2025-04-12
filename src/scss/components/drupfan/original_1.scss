@@ -157,6 +157,9 @@
     --color--blue-light-border: #a8cfff;
     --color--blue-light-bg: #fafcff;
     --color--grey-services: #E8E8E8;
+    --color--black-title: #0B0D0F;
+    --color--green-progressbar: #00C48C;
+    --color--grey-breadcrumb: #6F6F6D;
     --header-height-wide-when-fixed: var(--sp6);
     --mobile-nav-width: 31.25rem;
     --border-radius: 0.1875rem;
@@ -227,6 +230,38 @@ body.is-fixed {
 
 a {
     color: var(--color-text-primary-medium);
+}
+
+.breadcrumbs {
+  .breadcrumbs-holder {
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: 992px) {
+      margin-top: 10px;
+      margin-bottom: 32px;
+    }
+    a {
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--color--blue-primary);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    img {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+    }
+    span {
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--color--grey-breadcrumb);
+    }
+  }
 }
 
 a:hover {

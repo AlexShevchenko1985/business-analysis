@@ -3,6 +3,7 @@
   padding-block-end: clamp(30px, 7vw, 100px);
   background: var(--color--white);
   margin: 0;
+  overflow: hidden;
 
   .description {
     margin-block-start: clamp(30px, 7vw, 100px);

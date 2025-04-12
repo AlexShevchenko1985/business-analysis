@@ -4,6 +4,15 @@
  */
 get_header();
 ?>
+<div class="breadcrumbs">
+	<div class="container-lg">
+		<div class="breadcrumbs-holder">
+			<a href="/">Home</a>
+            <img src="<?php echo get_template_directory_uri(); ?>/src/images/breadcrumb-arrow.svg" alt="Arrow">
+            <span>Services</span>
+		</div>
+	</div>
+</div>
 <section id="block-developersforagenciesandinhouseteams" class="block hero-section services-index">
      <div class="container-lg">
 	    <div class="block__content row">

@@ -37,7 +37,7 @@
             <div class="d-flex justify-content-end"></div>
             <header id="header" class="header" role="banner" aria-label="Site header">
 
-                <div class="header--primary">
+                <div id="Header" class="header--primary">
                     <div class="container-lg">
                         <div class="header__section--primary">
                             <?php if (!empty($header_logo)): ?>

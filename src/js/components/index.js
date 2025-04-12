@@ -5,3 +5,5 @@ export { default as businessCasesSlider } from './business-cases-slider';
 export { default as accordion } from './accordion';
 export { default as popupSlider } from './popup-slider';
 export { default as backToTopBtn } from './back-to-top-btn';
+export { default as postsSidebar } from './posts-sidebar';
+export { default as postsProgressBar } from './posts-progressbar';
