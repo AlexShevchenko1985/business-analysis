@@ -2665,6 +2665,11 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "page"
+            },
+            {
+                "param": "page_type",
+                "operator": "!=",
+                "value": "posts_page"
             }
         ],
         [
@@ -2684,5 +2689,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1742996320
+    "modified": 1744460768
 }

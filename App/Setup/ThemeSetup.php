@@ -14,7 +14,27 @@ class ThemeSetup implements TaskInterface
 
         //Disable Gutenberg
         add_filter('use_block_editor_for_post_type', '__return_false', 10);
+
+        add_filter('rtwp_filter_wordcount',  [$this, 'rtwpFilterWordCount'], 10);
 	}
+
+    function rtwpFilterWordCount($count) {
+        $repeater_field = 'sections';
+        if(!is_single()){
+            return $count;
+        }
+
+        if (have_rows($repeater_field, get_the_ID())) {
+            while (have_rows($repeater_field, get_the_ID())) {
+                the_row();
+                $text = get_sub_field('content');
+                if (!empty($text)) {
+                    $count += str_word_count(strip_tags($text));
+                }
+            }
+        }
+        return $count;
+    }
 
 	/**
 	 * @return void

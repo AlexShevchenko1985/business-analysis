@@ -1,9 +1,16 @@
 <?php
 use App\Helpers\Helper;
 
-$background = !empty($background)? $background: '';
-$title = !empty($title) ? $title : '';
-$items = !empty($posts) ? $posts : get_posts(['posts_per_page' => 3]);
+if(is_single()){
+    $post_block = get_field('post_block');
+    $background = !empty($post_block['background'])? $post_block['background'] : '';
+    $title = !empty($post_block['title']) ? $post_block['title'] : '';
+    $items = !empty($post_block['posts']) ? $post_block['posts'] : get_posts(['posts_per_page' => 3, 'orderby' => 'rand',]);
+}else{
+    $background = !empty($background)? $background: '';
+    $title = !empty($title) ? $title : '';
+    $items = !empty($posts) ? $posts : get_posts(['posts_per_page' => 3, 'orderby' => 'rand',]);
+}
 ?>
 <section class="cards" style="<?php echo Helper::backgroundBlock($background)?>">
     <div class="container-lg">
