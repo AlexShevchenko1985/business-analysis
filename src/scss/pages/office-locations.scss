@@ -1,0 +1,94 @@
+.office-locations {
+  padding-block: clamp(30px, 7vw, 100px);
+  background: var(--color--white);
+  margin: 0;
+
+  .locations-block-holder {
+    .item {
+      margin-bottom: 54px;
+      display: flex;
+      align-items: center;
+      @media only screen and (max-width: 992px) {
+        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      .image {
+        width: 43%;
+        @media only screen and (max-width: 992px) {
+          width: 100%;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .location {
+        width: 57%;
+        padding-left: 5.3vw;
+        padding-right: 30px;
+        @media only screen and (max-width: 992px) {
+          width: 100%;
+          padding-left: 0;
+          padding-right: 0;
+          text-align: center;
+        }
+        .flag {
+          width: 65px;
+          height: 33px;
+          margin-bottom: 24px;
+          @media only screen and (max-width: 992px) {
+            margin: 0 auto 24px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .name {
+          font-family: var(--font-ubuntu);
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 37px;
+          color: var(--color--dark-text);
+          margin-bottom: 24px;
+        }
+        .address {
+          font-family: var(--font-serif);
+          font-size: 16px;
+          line-height: 20px;
+          color: var(--color--dark-text);
+          margin-bottom: 16px;
+        }
+        p {
+          margin: 0 0 4px;
+          font-family: var(--font-serif);
+          font-size: 16px;
+          line-height: 20px;
+          color: var(--color--dark-text);
+          a {
+            font-family: var(--font-serif);
+            font-size: 16px;
+            line-height: 20px;
+            color: var(--color--blue-primary);
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+        @media only screen and (max-width: 992px) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

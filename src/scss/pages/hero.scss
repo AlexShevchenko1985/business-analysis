@@ -7,11 +7,13 @@ body {
     }
     .hero-text {
       margin-top: 54px;
+      width: 52%;
       @media only screen and (max-width: 1200px) {
         margin-top: 0;
       }
       @media only screen and (max-width: 992px) {
         margin-block-end: 30px;
+        width: 100%;
       }
       h1 {
         &.block__title {
@@ -21,6 +23,9 @@ body {
       }
       .text-content {
         margin-block-end: 0;
+        p {
+          word-break: auto-phrase;
+        }
       }
       a.button-cta {
         margin: 32px 0 0;
@@ -39,6 +44,12 @@ body {
         }
       }
     }
+    .hero-image {
+      width: 48%;
+      @media only screen and (max-width: 992px) {
+        width: 100%;
+      }
+    }
 
   }
 }
@@ -48,7 +59,10 @@ body {
     &:after {
       background: #fff url(/wp-content/themes/business-analysis/src/images/index-services-bg.webp) no-repeat;
       background-position: right 50%;
-      background-size: 50% 90%;
+      background-size: 47% 90%;
+      @media only screen and (max-width: 992px) {
+        background-size: 100%;
+      }
     }
     .hero-text {
       margin-top: 0;
@@ -56,14 +70,33 @@ body {
       flex-direction: column;
       justify-content: center;
       padding-right: 80px;
+      width: 57%;
       @media only screen and (max-width: 992px) {
         padding-right: 0;
+        width: 100%;
+      }
+    }
+    .hero-image {
+      width: 43%;
+      @media only screen and (max-width: 992px) {
+        width: 100%;
       }
     }
     .paragraph-image-item {
       img {
         max-height: 650px;
         width: auto;
+      }
+    }
+  }
+
+  &.contact-hero {
+    &:after {
+      background: #fff url(/wp-content/themes/business-analysis/src/images/contact-hero-bg.webp) no-repeat;
+      background-position: right 0;
+      background-size: contain;
+      @media only screen and (max-width: 992px) {
+        background-size: 100%;
       }
     }
   }

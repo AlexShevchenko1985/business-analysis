@@ -151,3 +151,13 @@
     }
   }
 }
+
+body {
+  &:not(.home) {
+    .three-columns-icons {
+      .heading {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,8 +1,12 @@
 function postsProgressBar() {
   document.addEventListener('DOMContentLoaded', function () {
     const progressBarContainer = document.querySelector('.progress-bar');
-    const progressBar = progressBarContainer.querySelector('span');
+    const progressBarVar = document.querySelector('.progress-bar span');
     const fullContent = document.getElementById('blog-full-content');
+
+    if (!progressBarContainer) {
+      return;
+    }
 
     function updateProgressBar() {
       const contentTop = fullContent.getBoundingClientRect().top;
@@ -14,10 +18,10 @@ function postsProgressBar() {
         const progress = (scrollInsideContent / contentHeight) * 100;
 
         progressBarContainer.style.opacity = '1';
-        progressBar.style.width = progress + '%';
+        progressBarVar.style.width = progress + '%';
       } else {
         progressBarContainer.style.opacity = '0';
-        progressBar.style.width = '0%';
+        progressBarVar.style.width = '0%';
       }
     }
 

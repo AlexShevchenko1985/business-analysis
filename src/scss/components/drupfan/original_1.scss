@@ -71,9 +71,18 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: Ubuntu;
+  src: local("Ubuntu Medium"), local("Ubuntu Medium"), url(/wp-content/themes/business-analysis/src/fonts/Ubuntu-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
     --font-sans: "metropolis", sans-serif;
     --font-serif: "Lora", "georgia", serif;
+    --font-ubuntu: "Ubuntu", "georgia", serif;
     --font-size-base: 1rem;
     --font-size-l: 1.125rem;
     --font-size-s: 0.875rem;
@@ -160,6 +169,8 @@
     --color--black-title: #0B0D0F;
     --color--green-progressbar: #00C48C;
     --color--grey-breadcrumb: #6F6F6D;
+    --color--grey-cases: #1D1D1B;
+    --color--grey-border: #D9D9D9;
     --header-height-wide-when-fixed: var(--sp6);
     --mobile-nav-width: 31.25rem;
     --border-radius: 0.1875rem;

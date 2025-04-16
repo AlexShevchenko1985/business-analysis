@@ -64,7 +64,7 @@ class Assets implements TaskInterface
 
         wp_enqueue_script('ScrollMagic-js', get_template_directory_uri() . '/src/js/scrollmagic/ScrollMagic.min.js', [], '1.0.0', true);
         wp_enqueue_script('animation-gsap-js', get_template_directory_uri() . '/src/js/scrollmagic/plugins/animation.gsap.min.js', [], '1.0.0', true);
-        wp_enqueue_script('TweenMax-js', get_template_directory_uri() . '/src/js/greensock/TweenMax.min.js', [], '1.0.0', true);
+
     }
 
     /**

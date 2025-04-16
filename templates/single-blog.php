@@ -35,7 +35,7 @@ get_header();
 </section>
 <div id="blog-full-content" class="full-content">
 	<div class="progress-bar">
-	<span></span>
+		<span></span>
 	</div>
 	<div class="container-lg">
 		<div class="full-content-holder">
