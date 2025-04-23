@@ -162,6 +162,33 @@ body {
         }
       }
 
+      .recaptcha-contact {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        margin-bottom: 48px;
+        position: relative;
+        @media only screen and (max-width: 650px) {
+          flex-direction: column;
+          align-items: flex-start;
+          column-gap: 0;
+          row-gap: 20px;
+        }
+        p {
+          font-family: var(--font-serif);
+          font-size: 14px;
+          color: rgba(26, 26, 26, .7);
+        }
+        .wpcf7-not-valid-tip {
+          position: absolute;
+          top: 82px;
+          font-family: var(--font-serif);
+          font-size: 12px;
+          line-height: 16px;
+          color: var(--color--red-errors);
+        }
+      }
+
       .btn-contact {
         display: flex;
         position: relative;

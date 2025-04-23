@@ -100,6 +100,16 @@
       .linkedin-block {
         display: flex;
         align-items: center;
+        a {
+          width: 24px;
+          height: 24px;
+          min-width: 24px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
         p {
           border-left: 2px solid var(--color--grey-border);
           padding-left: 24px;

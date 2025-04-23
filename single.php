@@ -2,17 +2,12 @@
 get_header();
 ?>
 
-    <div class="breadcrumbs">
-        <div class="container-lg">
-            <div class="breadcrumbs-holder">
-                <a href="<?php echo home_url('/')?>"><?php echo __('Home', 'node'); ?></a>
-                <img src="<?php echo get_template_directory_uri(); ?>/src/images/breadcrumb-arrow.svg" alt="Arrow">
-                <a href="<?php echo get_post_type_archive_link('post'); ?>"><?php echo __('Blog', 'node'); ?></a>
-                <img src="<?php echo get_template_directory_uri(); ?>/src/images/breadcrumb-arrow.svg" alt="Arrow">
-                <span><?php echo get_the_title(); ?></span>
-            </div>
-        </div>
-    </div>
+<?php
+/**
+ * Breadcrumbs section
+ */
+get_template_part('template-parts/breadcrumbs');
+?>
 
 <?php if(have_posts()):
     $author = get_field('author');
@@ -76,7 +71,9 @@ get_header();
                             <?php if (!empty($contact_section['title'])): ?>
                                 <div class="banner" style="background:<?php echo $background; ?>">
                                     <div class="title <?php echo $class; ?>"><?php echo $contact_section['title']; ?></div>
-                                    <p class="<?php echo $class; ?>">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                                    <?php if ($contact_section['text']): ?>
+                                        <p class="<?php echo $class; ?>"></p>
+                                    <?php endif; ?>
                                     <div class="btn-holder">
                                         <?php
                                         /**

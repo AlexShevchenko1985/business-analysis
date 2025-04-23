@@ -5,9 +5,23 @@ $docs = !empty($docs)? $docs : [];
 $text = !empty($text)? $text : '';
 $button = !empty($button)? $button : '';
 $background = !empty($background)? $background: '';
+
+$title = !empty($title)? $title : '';
+$subtitle = !empty($subtitle)? $subtitle : '';
+$linkedin = !empty($linkedin)? $linkedin : '';
 ?>
 <section class="docs-slider" style="<?php echo Helper::backgroundBlock($background)?>">
     <div class="container-lg">
+
+        <?php if (!empty($title) || !empty($subtitle)): ?>
+            <div class="qualifications">
+                <?php if (!empty($title)): ?>
+                    <div class="title"><?php echo $title; ?></div>
+                <?php endif; ?>
+                <?php echo $subtitle; ?>
+            </div>
+        <?php endif; ?>
+
         <div class="documents-slider">
             <div class="nav-btn">
                 <div class="swiper-doc-button-prev js-button-prev">
@@ -39,20 +53,43 @@ $background = !empty($background)? $background: '';
                 </div>
             </div>
         </div>
-        <div class="description">
-            <?php echo $text; ?>
-            <?php if (!empty($button)): ?>
-                <div class="btn-holder">
-                    <?php
-                    /**
-                     * Button section
-                     */
-                    get_template_part('template-parts/button', '', ['button' => $button, 'classes' => 'button-cta']);
-                    ?>
+        <?php if (!empty($linkedin)): ?>
+            <div class="description description-with-social">
+                <div class="linkedin-block">
+                    <a href="<?php echo $linkedin; ?>" target="_blank">
+                        <img src="<?php echo get_template_directory_uri(); ?>/src/images/linkedin-slider-icon.svg" alt="Linkedin">
+                    </a>
+                    <?php echo $text; ?>
                 </div>
-            <?php endif; ?>
+                <?php if (!empty($button)): ?>
+                    <div class="btn-holder">
+                        <?php
+                        /**
+                         * Button section
+                         */
+                        get_template_part('template-parts/button', '', ['button' => $button, 'classes' => 'button-cta']);
+                        ?>
+                    </div>
+                <?php endif; ?>
 
-        </div>
+            </div>
+        <?php else: ?>
+            <div class="description">
+                <?php echo $text; ?>
+                <?php if (!empty($button)): ?>
+                    <div class="btn-holder">
+                        <?php
+                        /**
+                         * Button section
+                         */
+                        get_template_part('template-parts/button', '', ['button' => $button, 'classes' => 'button-cta']);
+                        ?>
+                    </div>
+                <?php endif; ?>
+
+            </div>
+        <?php endif; ?>
+
     </div>
 
     <div id="slider-popup" style="display: none;">

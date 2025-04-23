@@ -5,12 +5,27 @@ if (empty($data)) {
 }
 
 extract($data);
-
-
-
+$classes = 'block hero-section';
+if('background_stripes' === $type){
+    $classes .= ' services-index';
+}elseif('contact_hero'=== $type){
+    $classes .= ' contact-hero';
+}
 ?>
+<?php if (!is_front_page()): ?>
+    <div class="breadcrumbs">
+        <div class="container-lg">
+            <div class="breadcrumbs-holder">
+                <a href="<?php echo home_url('/')?>"><?php echo __('Home', 'node'); ?></a>
+                <img src="<?php echo get_template_directory_uri(); ?>/src/images/breadcrumb-arrow.svg" alt="Arrow">
+                <span><?php echo get_the_title(); ?></span>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>
+
 <section id="block-developersforagenciesandinhouseteams"
-     class="block hero-section <?php echo 'hero-' . $type; ?>">
+     class="<?php echo $classes; ?>">
      <div class="container-lg">
 	    <div class="block__content row">
 

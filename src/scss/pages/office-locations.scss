@@ -1,22 +1,21 @@
 .office-locations {
-  padding-block: clamp(30px, 7vw, 100px);
+  padding-block-start: clamp(10px, 7vw, 50px);
+  padding-block-end: clamp(30px, 7vw, 100px);
   background: var(--color--white);
   margin: 0;
 
   .locations-block-holder {
     .item {
-      margin-bottom: 54px;
+      padding-top: 54px;
       display: flex;
       align-items: center;
       @media only screen and (max-width: 992px) {
-        margin-bottom: 30px;
+        padding-top: 30px;
         flex-direction: column;
         align-items: flex-start;
         row-gap: 20px;
       }
-      &:last-of-type {
-        margin-bottom: 0;
-      }
+
       .image {
         width: 43%;
         @media only screen and (max-width: 992px) {
