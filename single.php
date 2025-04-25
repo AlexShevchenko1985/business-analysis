@@ -72,7 +72,7 @@ get_template_part('template-parts/breadcrumbs');
                                 <div class="banner" style="background:<?php echo $background; ?>">
                                     <div class="title <?php echo $class; ?>"><?php echo $contact_section['title']; ?></div>
                                     <?php if ($contact_section['text']): ?>
-                                        <p class="<?php echo $class; ?>"></p>
+                                        <p class="<?php echo $class; ?>"><?php echo $contact_section['text']; ?></p>
                                     <?php endif; ?>
                                     <div class="btn-holder">
                                         <?php
